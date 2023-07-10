@@ -19,6 +19,7 @@ export default function ExpenseForm() {
     }
 
     function submitHander(event){
+        event.preventDefault()
         const formData={
             title:changedTitle,
             amount:changedAmount,
